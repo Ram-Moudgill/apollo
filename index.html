@@ -56,8 +56,8 @@
                         and microservices into a single data graph that you can query with GraphQL
                     </p>
                     <div class="btns">
-                        <button class="btn btn-primary hero-btn">Start the Tutorial</button>
-                        <button class="btn btn-outline-primary hero-btn2">Contact Sales</button>
+                        <a class="btn btn-primary hero-btn">Start the Tutorial</a>
+                        <a class="btn btn-outline-primary hero-btn2">Contact Sales</a>
                     </div>
                     <div class="pt-4">
                         <div class="compaines pt-5 mt-5 d-flex justify-content-center align-items-center flex-wrap">
@@ -98,6 +98,37 @@
                 </div>
             </div>
         </div>
+        <div class="row what-about bg-darkblue">
+            <div class="col-md-9 mx-auto">
+                <div class="row">
+                    <div class="left mt-5">
+                        <h1 class="main-heading-what-about">What is Apollo?</h1>
+                        <p>Apollo is the industry-standard GraphQL implementation, providing the data graph layer that connects modern apps to the cloud.</p>
+                        <a href=""><h3>01</h3><p>A better way to do APIs</p> </a>
+                        <a href=""><h3>02</h3><p>All your data, managed in one place
+                            </p> </a>
+                        <a href=""><h3>03</h3><p>Suited for a modern architecture</p> </a>
+                        <a href=""><h3>04</h3><p>Build great experiences, faster
+                            Start the Tutorial</p> </a>
+                        <a class="btn btn-primary mt-5 btn-design bg-blue text-white">Get Started</a>
+                    </div>
+                    <div class="right px-5 ">
+                        <img  class="mt-5 pt-5" src="/images/apis@2x-f1fb43c194f7d6a0dae8bc7647396279.png" alt="">
+                        <h1 class="main-heading-what-about">A better way to do APIs</h1>
+                        <p>REST APIs are not a good fit for modern apps because they require large amounts of hard-to-manage data fetching code. With Apollo, components simply declare their data requirements using GraphQL and Apollo gets the right data to the right place – with strong end-to-end typing that prevents bugs and boosts productivity.</p>
+                        <img class="main-heading-what-about" src="/images/data@2x-958469fadd32f1e34c6debe97bc7ca21.png" alt="">
+                        <h1 class="main-heading-what-about">All your data, managed in one place</h1>
+                        <p>Apollo presents all of your organization’s data sources as one connected data graph that’s always up to date. You can easily browse everything that’s available, join data across multiple sources, and get the results in the shape you need and on any platform.</p>
+                        <img class="main-heading-what-about" src="/images/data-graph-d67c18acaa7af72dbf097dcc8918e981.png" alt="">
+                        <h1 class="main-heading">
+                            Suited for a modern architecture
+                        </h1>
+                        <p>Apollo is a great fit with microservice architectures and modern UI frameworks like React. It serves as an abstraction layer that decouples services and apps so that each can be developed independently of the other, in any language and on any platform.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
         <div class="row bg-light text-black pt-5">
             <div class="col-md-10 pt-2 mx-auto">
                 <section class="hero d-flex justify-content-center align-items-center flex-column">
@@ -105,8 +136,8 @@
                     <p class="sub-heading-section text-center pb-4 bolf">GraphQL is the new industry standard. With
                         Apollo, you’ll be up and running with a GraphQL data graph in about an hour.</p>
                     <div class="btns mb-3">
-                        <button class="btn btn-primary btn-design bg-blue text-white">Start the Tutorial</button>
-                        <button class="btn btn-outline-primary btn-design bg-light text-blue">Contact Sales</button>
+                        <a class="btn btn-primary btn-design bg-blue text-white">Start the Tutorial</a>
+                        <a class="btn btn-outline-primary btn-design bg-light text-blue">Contact Sales</a>
                     </div>
                 </section>
             </div>
@@ -232,11 +263,14 @@
             if (scrollY < 100) {
                 navbar.style.background = 'transparent'
                 navbar.style.boxShadow = ''
+                navbar.style.backdropFilter="none"
+
             }
             if (scrollY >= 100) {
                 navbar.style.background = 'rgba(49, 28, 135, 0.9)'
                 navbar.style.zIndex = '200'
                 navbar.style.boxShadow = 'rgba(0,0,0,.11) 0 1px'
+                navbar.style.backdropFilter="blur(5px)"
             }
         })
 
